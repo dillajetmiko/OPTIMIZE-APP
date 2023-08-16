@@ -1,0 +1,13 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .wrapper {
+    width: 80%;
+    margin-block: 60px;
+    background-color: rgb(223, 223, 223);
+    padding: 100px 30px;
+  }
+}
