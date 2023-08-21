@@ -36,7 +36,7 @@ export default function AboutPages({ data }: Partial<IAboutPage>) {
             <h3>3 reuuw</h3>
           </div>
           <div className={styles.konten}>
-            <h3>4</h3>
+            <h3>4 tttt</h3>
           </div>
           <div className={styles.konten}>
             <h3>5</h3>
