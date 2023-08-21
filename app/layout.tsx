@@ -32,7 +32,7 @@ export default function RootLayout({
         <nav className={styles.navbar}>
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
-          <Link href="/product">Product</Link>
+          <Link href="/aboutPages">AboutPages</Link>
         </nav>
         {children}
         <footer className={styles.footer}>

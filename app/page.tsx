@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.scss'
-import img from "./bg.webp";
+import img from "../app/assets/bg.webp";
 import { Roboto, Montserrat } from 'next/font/google'
 
 const roboto = Roboto({

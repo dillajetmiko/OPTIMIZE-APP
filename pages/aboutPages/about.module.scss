@@ -1,11 +1,55 @@
 .main {
   padding: 10px 100px;
 
-  .konten {
-    width: 150px;
-    margin: 10px;
-    padding: 40px;
-    background-color: red;
+  .slick-track {
+    display: flex;
+  }
+
+  .container {
+    width: auto;
+    padding: 12px 0px;
+
+    .slick-slider {
+      padding: 10px;
+    }
+
+    .konten {
+      width: 150px;
+      padding: 10px 40px;
+      background-color: red;
+      border: 3px solid black;
+      white-space: nowrap;
+    }
+
+    /* carousel */
+    .slick-track {
+      display: flex !important;
+      width: 8880px;
+      margin-left: 0 !important;
+      gap: 2px;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      font-family: "slick" !important;
+      font-size: 0px !important;
+      line-height: 1 !important;
+      opacity: 0.75 !important;
+      color: white;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      z-index: 99;
+    }
+
+    .slick-prev {
+      left: -3%;
+      z-index: 1;
+    }
+
+    .slick-next {
+      right: -3%;
+      z-index: 1;
+    }
   }
 
 }
