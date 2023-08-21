@@ -32,7 +32,6 @@ export default function Home() {
                 height="100%"
                 src="https://www.youtube.com/embed/mo8thg5XGV0"
                 allow="autoplay; encrypted-media"
-                loading='lazy'
               >
               </iframe>
             </div>
