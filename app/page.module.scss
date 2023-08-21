@@ -10,6 +10,35 @@
     background-color: rgb(223, 223, 223);
     padding: 100px 30px;
 
+    .atas {
+      width: 100%;
+      display: flex;
+
+      @media screen and (max-width: 1000px) {
+        display: block;
+      }
+
+      .image {
+        width: 50%;
+        height: auto;
+        object-fit: contain;
+
+        @media screen and (max-width: 1000px) {
+          width: 100%;
+        }
+
+      }
+
+      .yt {
+        width: 50%;
+        aspect-ratio: 560/315;
+
+        @media screen and (max-width: 1000px) {
+          width: 100%;
+        }
+      }
+    }
+
     .content {
       font-family: "Source Sans Pro";
       font-style: normal;
@@ -20,4 +49,5 @@
       color: #363a47;
     }
   }
+
 }
