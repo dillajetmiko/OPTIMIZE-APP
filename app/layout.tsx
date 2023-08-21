@@ -3,6 +3,8 @@ import styles from './layout.module.scss'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
