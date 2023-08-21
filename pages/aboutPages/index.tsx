@@ -17,15 +17,6 @@ export default function AboutPages({ data }: Partial<IAboutPage>) {
   };
   return (
     <div className={styles.main}>
-      <div>
-        <ol>
-          {data.map((item: any) => {
-            return (
-              <li>{item.title}</li>
-            )
-          })}
-        </ol>
-      </div>
       <div className={styles.container}>
         <ArkCarousel
           rounded
