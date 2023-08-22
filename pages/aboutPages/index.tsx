@@ -1,12 +1,23 @@
 'use client'
 import ArkCarousel from '@/components/Carousel';
 import styles from './about.module.scss'
+import { useEffect } from 'react';
 
 interface IAboutPage {
   data: any;
 }
 export default function AboutPages({ data }: Partial<IAboutPage>) {
   console.log({ data });
+  const mineBitcoin: any = (duration: any) => {
+    const start = new Date().getTime();
+    while (new Date().getTime() < start + duration) {
+      // TODO(tony): Make $$$
+    }
+  }
+
+  useEffect(() => {
+    mineBitcoin(1500)
+  }, [])
 
   const settings = {
     dots: true,
