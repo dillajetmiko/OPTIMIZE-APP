@@ -7,7 +7,7 @@ interface IAboutPage {
   data: any;
 }
 export default function AboutPages({ data }: Partial<IAboutPage>) {
-  console.log({ data });
+  // console.log({ data });
   const mineBitcoin: any = (duration: any) => {
     const start = new Date().getTime();
     while (new Date().getTime() < start + duration) {
