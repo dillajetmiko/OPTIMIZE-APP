@@ -3,6 +3,7 @@ import styles from './page.module.scss'
 import img from "../app/assets/bg.webp";
 import { Roboto, Montserrat } from 'next/font/google'
 import dynamic from 'next/dynamic';
+import LazyLoadedIframe from './lazyLoadIframe';
 // import Konten from './konten';
 const Konten = dynamic(() => import("./konten"));
 
@@ -28,16 +29,10 @@ export default function Home() {
               src={img}
               className={styles.image}
               alt="Picture of the author"
+              priority
             />
-            <div className={styles.yt}>
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/mo8thg5XGV0"
-                allow="autoplay; encrypted-media"
-              >
-              </iframe>
-            </div>
+            <LazyLoadedIframe />
+
           </div>
 
           <h1 className={styles.title}>Title</h1>

@@ -89,12 +89,12 @@ a {
 }
 
 /* carousel */
-/* .slick-track {
+.slick-track {
   display: flex !important;
   width: 8880px;
   margin-left: 0 !important;
   gap: 2px;
-} */
+}
 
 .slick-prev:before,
 .slick-next:before {
