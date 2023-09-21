@@ -1,6 +1,8 @@
-import AboutPages from "@/pages/aboutPages"
+// import AboutPages from "@/pages/aboutPages"
+const AboutPages = dynamic(() => import("@/pages/aboutPages"));
 import styles from './about.module.scss'
 import { Montserrat } from "next/font/google"
+import dynamic from "next/dynamic";
 
 // const montserrat = Montserrat({
 //   weight: '700',
