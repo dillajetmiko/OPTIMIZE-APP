@@ -1,5 +1,7 @@
 'use client'
-import ArkCarousel from '@/components/Carousel';
+// import ArkCarousel from '@/components/Carousel';
+const ArkCarousel = dynamic(() => import("@/components/Carousel"));
+import dynamic from 'next/dynamic';
 import styles from './about.module.scss'
 import { useEffect } from 'react';
 

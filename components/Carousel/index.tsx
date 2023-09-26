@@ -1,7 +1,9 @@
+import dynamic from "next/dynamic";
 import { IcNext, IcNextRound, IcPrev, IcPrevRound } from "../assets";
 import Image from "next/image";
 import { ReactNode } from "react";
-import Slider from "react-slick";
+const Slider = dynamic(() => import('react-slick'))
+
 
 const ArkCarousel = ({
   // komponent child / dalam bentuk loop
@@ -34,7 +36,7 @@ const ArkCarousel = ({
           id={trackingId?.btnNextPrev}
           src={rounded ? IcNextRound : IcNext}
           alt="ic-next"
-          loading="lazy"
+          priority
         />
       </div>
     );
@@ -52,7 +54,7 @@ const ArkCarousel = ({
           id={trackingId?.btnNextPrev}
           src={rounded ? IcPrevRound : IcPrev}
           alt="ic-prev"
-          loading="lazy"
+          priority
         />
       </div>
     );
