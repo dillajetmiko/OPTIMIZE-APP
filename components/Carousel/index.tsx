@@ -1,8 +1,7 @@
-import dynamic from "next/dynamic";
 import { IcNext, IcNextRound, IcPrev, IcPrevRound } from "../assets";
 import Image from "next/image";
 import { ReactNode } from "react";
-const Slider = dynamic(() => import('react-slick'))
+import Slider from "react-slick"
 
 
 const ArkCarousel = ({
